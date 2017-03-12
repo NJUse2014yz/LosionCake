@@ -8,7 +8,7 @@ import com.edu.nju.wel.model.Order;
  * @author congye6
  *
  */
-public interface OrderBlService {
+public interface OrderDao {
 
 	/**
 	 * 添加订单
