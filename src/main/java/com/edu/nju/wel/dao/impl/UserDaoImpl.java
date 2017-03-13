@@ -21,7 +21,7 @@ public class UserDaoImpl implements UserDao{
     protected SessionFactory sessionFactory;
     private Session session;
 
-    public List<User> find() {
+    public List<User> findAll() {
         session = sessionFactory.openSession();
         Transaction tx = session.beginTransaction();
         Criteria criteria = session.createCriteria(User.class);
@@ -36,4 +36,20 @@ public class UserDaoImpl implements UserDao{
         session.close();
         return users;
     }
+	public User findById(String id) {
+        User user=new User();
+        return user;
+    }
+	public void update(User user)
+	{
+		return;
+	}
+	public void delete(User user)
+	{
+		return ;
+	}
+	public void insert(User user)
+	{
+		return ;
+	}
 }
