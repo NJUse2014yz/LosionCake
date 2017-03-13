@@ -1,4 +1,4 @@
-package com.edu.nju.wel.dao.order;
+package com.edu.nju.wel.dao;
 
 import java.util.List;
 
