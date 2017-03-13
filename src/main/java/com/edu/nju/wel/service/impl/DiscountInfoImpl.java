@@ -3,7 +3,6 @@ package com.edu.nju.wel.service.impl;
 import java.util.List;
 
 import com.edu.nju.wel.model.Discount;
-import com.edu.nju.wel.service.DiscountService;
 import com.edu.nju.wel.service.discount.DiscountInfoService;
 
 public class DiscountInfoImpl implements DiscountInfoService{
