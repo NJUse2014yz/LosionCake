@@ -1,6 +1,8 @@
-package com.edu.nju.wel.dao.good;
+package com.edu.nju.wel.dao;
 
 import com.edu.nju.wel.model.Good;
+
+import java.util.List;
 
 
 /**
@@ -11,13 +13,13 @@ public interface GoodDao {
      * 添加商品
      * @param good
      */
-    public void addGood(Good good);
+    public int addGood(Good good);
 
     /**
      * 删除商品
      * @param goodId
      */
-    public void deleteGood(int goodId);
+    public int deleteGood(int goodId);
 
     /**
      * 根据商品id获取商品信息
@@ -27,8 +29,14 @@ public interface GoodDao {
     public Good getGood(int goodId);
 
     /**
+     * 获取商品列表
+     * @return
+     */
+    public List<Good> getGood();
+
+    /**
      * 更新商品
      * @param good
      */
-    public void updateGood(Good good);
+    public int updateGood(Good good);
 }

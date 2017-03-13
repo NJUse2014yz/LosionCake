@@ -9,12 +9,13 @@ import org.springframework.context.ApplicationContext;
 public class DAOManager {
 
     public final static UserDao userDao;
-
+    public final static GoodDao goodDao;
 
 
     static {
         ApplicationContext context = ApplicationContextHelper.getApplicationContext();
         userDao = context.getBean(UserDao.class);
+        goodDao = context.getBean(GoodDao.class);
     }
 
 }
